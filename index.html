@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aimtell Dashboard | Sites</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="get-quote">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id="quote">Aimtell Dashboard | Sites</h3>
+            <button
+              class="btn btn-primary pull-right"
+              type="button"
+              onclick="showSites();"
+            >
+              Load Data
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>UID</th>
+            <th>URL</th>
+            <th>NAME</th>
+            <th>ICON</th>
+            <th>PROMPT ID</th>
+            <th>WEBPUSH ID</th>
+            <th>AUTO PROMPT</th>
+            <th>CREATED AT</th>
+            <th>ACTIVE</th>
+          </tr>
+        </thead>
+        <tbody id="siteslist">
+          <tr>
+            <td colspan="10">No Records found</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
